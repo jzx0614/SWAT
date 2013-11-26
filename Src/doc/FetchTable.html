@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: FetchTable</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./fetch_table_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="fetch_table.rb">fetch_table.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-parser_counter_table">::parser_counter_table</a></li>
+					
+					<li><a href="#method-c-parser_data_flow_table">::parser_data_flow_table</a></li>
+					
+					<li><a href="#method-c-parser_flow_table_matrix">::parser_flow_table_matrix</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./AutoRunTraffic.html">AutoRunTraffic</a></li>
+				
+					<li><a href="./BreakdownCase.html">BreakdownCase</a></li>
+				
+					<li><a href="./BrowserOperator.html">BrowserOperator</a></li>
+				
+					<li><a href="./CompareCase.html">CompareCase</a></li>
+				
+					<li><a href="./CompareTable.html">CompareTable</a></li>
+				
+					<li><a href="./DataFlowCaseBase.html">DataFlowCaseBase</a></li>
+				
+					<li><a href="./DetailCase.html">DetailCase</a></li>
+				
+					<li><a href="./DispatchMgr.html">DispatchMgr</a></li>
+				
+					<li><a href="./ExportTable.html">ExportTable</a></li>
+				
+					<li><a href="./FetchTable.html">FetchTable</a></li>
+				
+					<li><a href="./FlowCounterCaseBase.html">FlowCounterCaseBase</a></li>
+				
+					<li><a href="./MatrixCase.html">MatrixCase</a></li>
+				
+					<li><a href="./MultipleCounterCaseBase.html">MultipleCounterCaseBase</a></li>
+				
+					<li><a href="./NeighborDetailCase.html">NeighborDetailCase</a></li>
+				
+					<li><a href="./Object.html">Object</a></li>
+				
+					<li><a href="./PageControl.html">PageControl</a></li>
+				
+					<li><a href="./PeeringAnalysisCase.html">PeeringAnalysisCase</a></li>
+				
+					<li><a href="./ReportCaseBase.html">ReportCaseBase</a></li>
+				
+					<li><a href="./ReportKeyContrl.html">ReportKeyContrl</a></li>
+				
+					<li><a href="./ReportSummary.html">ReportSummary</a></li>
+				
+					<li><a href="./SummaryReportCase.html">SummaryReportCase</a></li>
+				
+					<li><a href="./TopNCase.html">TopNCase</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">FetchTable</h1>
+
+		<div id="description">
+			<p>
+Fetch expect file or current html table to 2-D array
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="parser-counter-table-method" class="method-detail ">
+				<a name="method-c-parser_counter_table"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parser_counter_table</span><span
+						class="method-args">(counter_table, multiple=false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+<a
+href="FetchTable.html#method-c-parser_counter_table">parser_counter_table</a>(Watir::Table,
+Bool) > array return a 2D array Parser table of detail page (only detail
+page) Parameter:
+</p>
+<pre>
+    counter_table  Watir::Table
+    multiple      if true parse counter of 'Detail' Page, else other counter table</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="parser-counter-table-source">
+<pre>
+    <span class="ruby-comment cmt"># File fetch_table.rb, line 10</span>
+10:     <span class="ruby-keyword kw">def</span> <span class="ruby-constant">FetchTable</span>.<span class="ruby-identifier">parser_counter_table</span>(<span class="ruby-identifier">counter_table</span>, <span class="ruby-identifier">multiple</span>=<span class="ruby-keyword kw">false</span>)
+11:         <span class="ruby-identifier">result</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+12:         <span class="ruby-identifier">drop_number</span> = <span class="ruby-identifier">multiple</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+13:         <span class="ruby-comment cmt"># skip image cell</span>
+14:         <span class="ruby-identifier">counter_table</span>.<span class="ruby-identifier">cells</span>.<span class="ruby-identifier">drop</span>(<span class="ruby-identifier">drop_number</span>).<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">cell</span>, <span class="ruby-identifier">index_col</span><span class="ruby-operator">|</span>
+15:             <span class="ruby-comment cmt"># we only need the children of div, so drop div which isn't children of counter_cell</span>
+16:             <span class="ruby-identifier">counter_divs</span> = <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">divs</span>.<span class="ruby-identifier">select</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">div</span><span class="ruby-operator">|</span> <span class="ruby-identifier">div</span>.<span class="ruby-identifier">parent</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">cell</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">div</span>.<span class="ruby-identifier">class_name</span> <span class="ruby-operator">!=</span> <span class="ruby-value str">'div_counter_time'</span>} 
+17:             <span class="ruby-identifier">counter_divs</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">div</span>, <span class="ruby-identifier">index_row</span><span class="ruby-operator">|</span>
+18:                 <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">index_col</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-comment cmt"># initial row of result array when first row.</span>
+19:                 <span class="ruby-identifier">result</span>[<span class="ruby-identifier">index_row</span>].<span class="ruby-identifier">push</span>(<span class="ruby-identifier">div</span>.<span class="ruby-identifier">text</span>)
+20:             <span class="ruby-keyword kw">end</span>
+21:         <span class="ruby-keyword kw">end</span>
+22:         <span class="ruby-identifier">result</span>
+23:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parser-data-flow-table-method" class="method-detail ">
+				<a name="method-c-parser_data_flow_table"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parser_data_flow_table</span><span
+						class="method-args">(data_flow_table, flowtype='')</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+<a
+href="FetchTable.html#method-c-parser_data_flow_table">parser_data_flow_table</a>(Watir::Table,
+String) > 2D array Parser Data Flow table. Parameter:
+</p>
+<pre>
+    data_flow_table  Watir::Table from the id = DataFlowTable
+    flowtype         Average, Maximum, Last, Total or empty string</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="parser-data-flow-table-source">
+<pre>
+    <span class="ruby-comment cmt"># File fetch_table.rb, line 31</span>
+31:     <span class="ruby-keyword kw">def</span> <span class="ruby-constant">FetchTable</span>.<span class="ruby-identifier">parser_data_flow_table</span>(<span class="ruby-identifier">data_flow_table</span>, <span class="ruby-identifier">flowtype</span>=<span class="ruby-value str">''</span>)
+32:         <span class="ruby-identifier">result</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+33:         
+34:         <span class="ruby-comment cmt"># store index, it need match flowtype and flow_data_type</span>
+35:         <span class="ruby-identifier">index_list</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+36:         <span class="ruby-identifier">header</span> = <span class="ruby-identifier">data_flow_table</span>[<span class="ruby-value">0</span>]
+37:         <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">cell_idx</span> <span class="ruby-keyword kw">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">header</span>.<span class="ruby-identifier">column_count</span>)
+38:             <span class="ruby-identifier">cell</span> = <span class="ruby-identifier">header</span>[<span class="ruby-identifier">cell_idx</span>]
+39:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">id</span> <span class="ruby-operator">==</span> <span class="ruby-value str">''</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">id</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">flowtype</span>)
+40:                <span class="ruby-identifier">index_list</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">cell_idx</span>)
+41:             <span class="ruby-keyword kw">end</span>
+42:         <span class="ruby-keyword kw">end</span>
+43:         
+44:         <span class="ruby-identifier">data_flow_table</span>.<span class="ruby-identifier">rows</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">row</span><span class="ruby-operator">|</span>
+45:             <span class="ruby-comment cmt"># get cell value from index_list</span>
+46:             <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">row</span>.<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">values_at</span>(*<span class="ruby-identifier">index_list</span>))
+47:         <span class="ruby-keyword kw">end</span>
+48:             
+49:         <span class="ruby-identifier">result</span>
+50:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parser-flow-table-matrix-method" class="method-detail ">
+				<a name="method-c-parser_flow_table_matrix"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parser_flow_table_matrix</span><span
+						class="method-args">(data_flow_table, flowtype='')</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+<a
+href="FetchTable.html#method-c-parser_flow_table_matrix">parser_flow_table_matrix</a>(Watir::Table,
+String) > 2D array Parser Dataflow table of Matrix or Breakdown .
+Parameter:
+</p>
+<pre>
+    data_flow_table  Watir::Table from the id = DataFlowTable
+    flowtype         Average, Maximum, Last, Total or empty string    </pre>
+					
+
+					
+					<div class="method-source-code"
+						id="parser-flow-table-matrix-source">
+<pre>
+    <span class="ruby-comment cmt"># File fetch_table.rb, line 57</span>
+57:     <span class="ruby-keyword kw">def</span> <span class="ruby-constant">FetchTable</span>.<span class="ruby-identifier">parser_flow_table_matrix</span>(<span class="ruby-identifier">data_flow_table</span>, <span class="ruby-identifier">flowtype</span>=<span class="ruby-value str">''</span>)
+58:         <span class="ruby-identifier">result</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+59: 
+60:         <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">data_flow_table</span>.<span class="ruby-identifier">rows</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_a</span>
+61:         
+62:         <span class="ruby-identifier">header_row</span> = []
+63:         <span class="ruby-identifier">data_flow_table</span>.<span class="ruby-identifier">rows</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">cell</span><span class="ruby-operator">|</span>
+64:             <span class="ruby-keyword kw">begin</span>
+65:                 <span class="ruby-identifier">idx</span> = <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">div</span>(<span class="ruby-value">:class</span>, <span class="ruby-value str">'tbInnerColumnNum'</span>).<span class="ruby-identifier">text</span>
+66:                 <span class="ruby-identifier">idx</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;\r\n&quot;</span>
+67:             <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Watir</span><span class="ruby-operator">::</span><span class="ruby-constant">Exception</span><span class="ruby-operator">::</span><span class="ruby-constant">UnknownObjectException</span>
+68:                 <span class="ruby-identifier">idx</span> = <span class="ruby-value str">''</span>
+69:             <span class="ruby-keyword kw">end</span>
+70:             
+71:             <span class="ruby-identifier">header_row</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">cell</span>.<span class="ruby-identifier">text</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-identifier">idx</span>, <span class="ruby-value str">''</span>))
+72:         <span class="ruby-keyword kw">end</span>
+73:         <span class="ruby-identifier">header_row</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">'Comment'</span>
+74:         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">header_row</span>)
+75:         
+76:         <span class="ruby-identifier">data_flow_table</span>.<span class="ruby-identifier">rows</span>.<span class="ruby-identifier">drop</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">row</span><span class="ruby-operator">|</span>
+77:             <span class="ruby-keyword kw">next</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">row</span>.<span class="ruby-identifier">id</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">flowtype</span>)
+78: 
+79:             <span class="ruby-identifier">row_list</span> = <span class="ruby-identifier">row</span>.<span class="ruby-identifier">to_a</span>
+80:             <span class="ruby-identifier">header_col</span> = <span class="ruby-identifier">row</span>[<span class="ruby-value">0</span>]
+81:             <span class="ruby-keyword kw">begin</span>
+82:                 <span class="ruby-identifier">idx</span> = <span class="ruby-identifier">header_col</span>.<span class="ruby-identifier">div</span>(<span class="ruby-value">:class</span>, <span class="ruby-value str">'tbInnerRowNum'</span>).<span class="ruby-identifier">text</span>
+83:             <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Watir</span><span class="ruby-operator">::</span><span class="ruby-constant">Exception</span><span class="ruby-operator">::</span><span class="ruby-constant">UnknownObjectException</span>
+84:                 <span class="ruby-identifier">idx</span> = <span class="ruby-value str">''</span>
+85:             <span class="ruby-keyword kw">end</span>
+86:             <span class="ruby-identifier">row_list</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">sub!</span>(<span class="ruby-identifier">idx</span>, <span class="ruby-value str">''</span>)
+87:             <span class="ruby-identifier">row_list</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">row</span>.<span class="ruby-identifier">id</span>)
+88:             <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">row_list</span>)
+89:         <span class="ruby-keyword kw">end</span>
+90:         
+91:         <span class="ruby-identifier">result</span>
+92:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

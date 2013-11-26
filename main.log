@@ -1,0 +1,554 @@
+[BrowserOperator] Login admin 
+[BrowserOperator] goto http://192.168.75.155/atm_system_access.denis
+[PageControl] Don't test Report > Bookmark. it was filtered.
+[PageControl] Don't test Report > Analyzer > Route Analyzer > TopN. it was filtered.
+[PageControl] Don't test Report > Analyzer > BGP Router > Summary Report. it was filtered.
+[PageControl] Don't test Report > Analyzer > BGP Router > TopN. it was filtered.
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Device > Router > Detail
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["P1", "P2", "PE4", "PE5", "PE6", "PE7", "PE9", "Probe"]
+[ReportKeyContrl] product_case_list 8
+[ReportKeyContrl] goto_next_case ["P1"]
+[BrowserOperator] wait_loading....................
+Router_Detail_P1    Pass    0.940001
+[ReportKeyContrl] goto_next_case ["P2"]
+[BrowserOperator] wait_loading....................
+Router_Detail_P2    Pass    0.770001
+[ReportKeyContrl] goto_next_case ["PE4"]
+[BrowserOperator] wait_loading....................
+Router_Detail_PE4    Pass    0.700001
+[ReportKeyContrl] goto_next_case ["PE5"]
+[BrowserOperator] wait_loading....................
+Router_Detail_PE5    Pass    0.800001
+[ReportKeyContrl] goto_next_case ["PE6"]
+[BrowserOperator] wait_loading....................
+Router_Detail_PE6    Pass    0.900001
+[ReportKeyContrl] goto_next_case ["PE7"]
+[BrowserOperator] wait_loading....................
+Router_Detail_PE7    Pass    0.600001
+[ReportKeyContrl] goto_next_case ["PE9"]
+[BrowserOperator] wait_loading....................
+Router_Detail_PE9    Pass    0.730001
+[ReportKeyContrl] goto_next_case ["Probe"]
+[BrowserOperator] wait_loading....................
+Router_Detail_Probe    Pass    0.790001
+			Current Total Time 9.790014
+
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Device > Router > Compare
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_counter_value	["bps", "pps"]
+[ReportKeyContrl] product_case_list 2
+[ReportKeyContrl] goto_next_case ["bps"]
+[BrowserOperator] wait_loading....................
+Error: [0, 3]----------
+["%", "Total %"]
+Error: [6, 1]----------
+["Probe", "probe"]
+Router_Compare_bps    Failed    1.490002
+[ReportKeyContrl] goto_next_case ["pps"]
+[BrowserOperator] wait_loading....................
+Error: [0, 3]----------
+["%", "Total %"]
+Error: [6, 1]----------
+["Probe", "probe"]
+Router_Compare_pps    Failed    1.580003
+			Current Total Time 17.260024
+
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Device > Router > TopN
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["P1", "P2", "PE4", "PE5", "PE6", "PE7", "PE9", "Probe"]
+[ReportKeyContrl] product_case_list 8
+[ReportKeyContrl] insert_key: rpt_topn_value be ignored.
+[ReportKeyContrl] insert_key: rpt_counter_value be ignored.
+[ReportKeyContrl] goto_next_case ["P1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_P1.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [73, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 73 expect: 0 
+Router_TopN_P1    Failed    2.540004
+[ReportKeyContrl] goto_next_case ["P2"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_P2.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [13, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 13 expect: 0 
+Router_TopN_P2    Failed    2.000003
+[ReportKeyContrl] goto_next_case ["PE4"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_PE4.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [37, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 37 expect: 0 
+Router_TopN_PE4    Failed    1.480002
+[ReportKeyContrl] goto_next_case ["PE5"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_PE5.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [61, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 61 expect: 0 
+Router_TopN_PE5    Failed    1.590002
+[ReportKeyContrl] goto_next_case ["PE6"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_PE6.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [23, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 23 expect: 0 
+Router_TopN_PE6    Failed    1.100001
+[ReportKeyContrl] goto_next_case ["PE7"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_PE7.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [5, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 5 expect: 0 
+Router_TopN_PE7    Failed    0.960002
+[ReportKeyContrl] goto_next_case ["PE9"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_PE9.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [37, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 37 expect: 0 
+Router_TopN_PE9    Failed    1.420002
+[ReportKeyContrl] goto_next_case ["Probe"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_TopN_Probe.xls
+[CompareTable] length [2, 0]
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 2 expect: 0 
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Router_TopN_Probe    Failed    0.760001
+			Current Total Time 41.210058
+
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Device > Router > Breakdown
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_topn_value	["InputIF+SrcIP"]
+[ReportKeyContrl] product_case_list 1
+[ReportKeyContrl] insert_key: ["InputIF+SrcIP"] be ignored.
+[ReportKeyContrl] insert_key: rpt_counter_value	["bps", "pps"]
+[ReportKeyContrl] product_case_list 2
+[ReportKeyContrl] goto_next_case ["bps"]
+[BrowserOperator] wait_loading....................
+[CompareTable] length [3, 10]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 10 
+Router_Breakdown_bps    Failed    1.130002
+[ReportKeyContrl] goto_next_case ["pps"]
+[BrowserOperator] wait_loading....................
+[CompareTable] length [3, 10]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 10 
+Router_Breakdown_pps    Failed    1.290002
+			Current Total Time 49.93007
+
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Device > Router > Matrix
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["P1", "P2", "PE4", "PE5", "PE6", "PE7", "PE9", "Probe"]
+[ReportKeyContrl] product_case_list 8
+[ReportKeyContrl] insert_key: rpt_topn_value be ignored.
+[ReportKeyContrl] insert_key: rpt_counter_value be ignored.
+[ReportKeyContrl] goto_next_case ["P1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_P1.xls
+Router_Matrix_P1 timed out after 10 seconds
+Router_Matrix_P1    Failed    0.230001
+[ReportKeyContrl] goto_next_case ["P2"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_P2.xls
+Router_Matrix_P2 timed out after 10 seconds
+Router_Matrix_P2    Failed    0.24
+[ReportKeyContrl] goto_next_case ["PE4"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_PE4.xls
+Router_Matrix_PE4 timed out after 10 seconds
+Router_Matrix_PE4    Failed    0.260001
+[ReportKeyContrl] goto_next_case ["PE5"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_PE5.xls
+Router_Matrix_PE5 timed out after 10 seconds
+Router_Matrix_PE5    Failed    0.200001
+[ReportKeyContrl] goto_next_case ["PE6"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_PE6.xls
+Router_Matrix_PE6 timed out after 10 seconds
+Router_Matrix_PE6    Failed    0.23
+[ReportKeyContrl] goto_next_case ["PE7"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_PE7.xls
+Router_Matrix_PE7 timed out after 10 seconds
+Router_Matrix_PE7    Failed    0.31
+[ReportKeyContrl] goto_next_case ["PE9"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_PE9.xls
+Router_Matrix_PE9 timed out after 10 seconds
+Router_Matrix_PE9    Failed    0.24
+[ReportKeyContrl] goto_next_case ["Probe"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Router_Matrix_Probe.xls
+Router_Matrix_Probe timed out after 10 seconds
+Router_Matrix_Probe    Failed    0.250001
+			Current Total Time 138.564194
+
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Device > Interface > Detail
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["P1_IF0/1", "P1_IF1/0", "P1_IF1/1", "P1_IF2/0", "P2_IF0/1", "P2_IF1/1", "P2_IF2/0", "PE4_IF0/1", "PE4_IF11", "PE4_IF12", "PE5_IF0/1", "PE5_IF101", "PE6_IF0/1", "PE6_IF1/0", "PE6_IF1/1", "PE6_IF32", "PE7_IF0/1", "PE7_IF1/0", "PE7_IF1/1", "PE9_IF2/0", "PE9_IF21", "PE9_IF22"]
+[ReportKeyContrl] product_case_list 22
+[ReportKeyContrl] goto_next_case ["P1_IF0/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_P1_IF01.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_P1_IF0/1    Failed    0.820001
+[ReportKeyContrl] goto_next_case ["P1_IF1/0"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_P1_IF10.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_P1_IF1/0    Failed    1.190002
+[ReportKeyContrl] goto_next_case ["P1_IF1/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_P1_IF11.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_P1_IF1/1    Failed    1.090001
+[ReportKeyContrl] goto_next_case ["P1_IF2/0"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_P1_IF20.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_P1_IF2/0    Failed    0.980001
+[ReportKeyContrl] goto_next_case ["P2_IF0/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_P2_IF01.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_P2_IF0/1    Failed    0.730001
+[ReportKeyContrl] goto_next_case ["P2_IF1/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_P2_IF11.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_P2_IF1/1    Failed    1.280002
+[ReportKeyContrl] goto_next_case ["P2_IF2/0"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_P2_IF20.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_P2_IF2/0    Failed    1.050002
+[ReportKeyContrl] goto_next_case ["PE4_IF0/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE4_IF01.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE4_IF0/1    Failed    0.950001
+[ReportKeyContrl] goto_next_case ["PE4_IF11"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE4_IF11.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE4_IF11    Failed    0.892001
+[ReportKeyContrl] goto_next_case ["PE4_IF12"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE4_IF12.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE4_IF12    Failed    1.180001
+[ReportKeyContrl] goto_next_case ["PE5_IF0/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE5_IF01.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE5_IF0/1    Failed    1.142002
+[ReportKeyContrl] goto_next_case ["PE5_IF101"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE5_IF101.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE5_IF101    Failed    1.360002
+[ReportKeyContrl] goto_next_case ["PE6_IF0/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE6_IF01.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE6_IF0/1    Failed    1.030002
+[ReportKeyContrl] goto_next_case ["PE6_IF1/0"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE6_IF10.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE6_IF1/0    Failed    0.660001
+[ReportKeyContrl] goto_next_case ["PE6_IF1/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE6_IF11.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE6_IF1/1    Failed    0.870001
+[ReportKeyContrl] goto_next_case ["PE6_IF32"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE6_IF32.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE6_IF32    Failed    0.980001
+[ReportKeyContrl] goto_next_case ["PE7_IF0/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE7_IF01.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE7_IF0/1    Failed    1.150002
+[ReportKeyContrl] goto_next_case ["PE7_IF1/0"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE7_IF10.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE7_IF1/0    Failed    0.820001
+[ReportKeyContrl] goto_next_case ["PE7_IF1/1"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE7_IF11.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE7_IF1/1    Failed    0.870001
+[ReportKeyContrl] goto_next_case ["PE9_IF2/0"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE9_IF20.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE9_IF2/0    Failed    0.670001
+[ReportKeyContrl] goto_next_case ["PE9_IF21"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE9_IF21.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE9_IF21    Failed    0.960001
+[ReportKeyContrl] goto_next_case ["PE9_IF22"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Interface_Detail_PE9_IF22.xls
+[CompareTable] length [3, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 3 expect: 0 
+Interface_Detail_PE9_IF22    Failed    1.310002
+			Current Total Time 175.318246
+
+[PageControl] Don't test Report > Device > Interface > Compare. it was filtered.
+[PageControl] Don't test Report > Device > Interface > TopN. it was filtered.
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Device > Network Boundary > Detail
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["- None -"]
+[ReportKeyContrl] product_case_list 1
+[ReportKeyContrl] goto_next_case ["- None -"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Network Boundary_Detail_- None -.xls
+Network Boundary_Detail_- None - timed out after 10 seconds
+Network Boundary_Detail_- None -    Failed    0.210001
+			Current Total Time 188.298264
+
+[PageControl] Don't test Report > Device > Network Boundary > TopN. it was filtered.
+[PageControl] Don't test Report > Internet > Summary Report. it was filtered.
+[PageControl] Don't test Report > Internet > Peering Analysis. it was filtered.
+[PageControl] Don't test Report > Internet > TopN. it was filtered.
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Neighbor > Detail
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["NB12,21", "NB22", "NB66011"]
+[ReportKeyContrl] product_case_list 3
+[ReportKeyContrl] insert_key: rpt_counter_value be ignored.
+[ReportKeyContrl] goto_next_case ["NB12,21"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Neighbor_Detail_NB12,21.xls
+[CompareTable] length [7, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 7 expect: 0 
+Neighbor_Detail_NB12,21    Failed    0.950001
+[ReportKeyContrl] goto_next_case ["NB22"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Neighbor_Detail_NB22.xls
+[CompareTable] length [7, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 7 expect: 0 
+Neighbor_Detail_NB22    Failed    1.260001
+[ReportKeyContrl] goto_next_case ["NB66011"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Neighbor_Detail_NB66011.xls
+[CompareTable] length [7, 0]
+[handle_error_list] [Error] Array length don't match. 
+[handle_error_list] current: 7 expect: 0 
+Neighbor_Detail_NB66011    Failed    0.890001
+			Current Total Time 195.258274
+
+[PageControl] Don't test Report > Neighbor > Compare. it was filtered.
+[PageControl] Don't test Report > Neighbor > TopN. it was filtered.
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Sub-Network > Detail
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["SN101", "SN201"]
+[ReportKeyContrl] product_case_list 2
+[ReportKeyContrl] goto_next_case ["SN101"]
+[BrowserOperator] wait_loading....................
+Sub-Network_Detail_SN101    Pass    0.700001
+[ReportKeyContrl] goto_next_case ["SN201"]
+[BrowserOperator] wait_loading....................
+Sub-Network_Detail_SN201    Pass    0.820001
+			Current Total Time 199.72828
+
+[PageControl] Don't test Report > Sub-Network > Compare. it was filtered.
+[PageControl] Don't test Report > Sub-Network > TopN. it was filtered.
+[PageControl] Don't test Report > Sub-Network > Breakdown. it was filtered.
+[PageControl] Don't test Report > Sub-Network > Matrix. it was filtered.
+[PageControl] Don't test Report > Sub-Network > Spoofed IP Summary. it was filtered.
+[PageControl] Don't test Report > Sub-Network > Spoofed IP TopN. it was filtered.
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Server-farm > Detail
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["- None -"]
+[ReportKeyContrl] product_case_list 1
+[ReportKeyContrl] goto_next_case ["- None -"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Server-farm_Detail_- None -.xls
+Server-farm_Detail_- None - timed out after 10 seconds
+Server-farm_Detail_- None -    Failed    0.23
+			Current Total Time 213.268299
+
+[PageControl] Don't test Report > Server-farm > Compare. it was filtered.
+[PageControl] Don't test Report > Server-farm > TopN. it was filtered.
+[PageControl] Don't test Report > Server-farm > Breakdown. it was filtered.
+[PageControl] Don't test Report > Server-farm > Matrix. it was filtered.
+********************************************************************************
+[PageControl] goto_next_report_page: Report > Black List > Detail
+********************************************************************************
+[BrowserOperator] wait_loading....................
+[ReportKeyContrl] insert_key: rpt_ins_value	["- None -"]
+[ReportKeyContrl] product_case_list 1
+[ReportKeyContrl] goto_next_case ["- None -"]
+[BrowserOperator] wait_loading....................
+[ExportTable] load_one_table: File isn't exist. ../basic_traffic_report/expect_table/Black List_Detail_- None -.xls
+Black List_Detail_- None - timed out after 10 seconds
+Black List_Detail_- None -    Failed    0.280001
+			Current Total Time 226.270718
+
+[PageControl] Don't test Report > Black List > Compare. it was filtered.
+[PageControl] Don't test Report > Black List > TopN. it was filtered.
+[PageControl] Don't test Report > Filter > Detail. it was filtered.
+[PageControl] Don't test Report > Filter > Compare. it was filtered.
+[PageControl] Don't test Report > Filter > TopN. it was filtered.
+------------------------------------------------------------
+Report Summary
+------------------------------------------------------------
+Router_Detail_P1		Pass		0.940001
+Router_Detail_P2		Pass		0.770001
+Router_Detail_PE4		Pass		0.700001
+Router_Detail_PE5		Pass		0.800001
+Router_Detail_PE6		Pass		0.900001
+Router_Detail_PE7		Pass		0.600001
+Router_Detail_PE9		Pass		0.730001
+Router_Detail_Probe		Pass		0.790001
+Router_Compare_bps		Failed		1.490002
+Router_Compare_pps		Failed		1.580003
+Router_TopN_P1		Failed		2.540004
+Router_TopN_P2		Failed		2.000003
+Router_TopN_PE4		Failed		1.480002
+Router_TopN_PE5		Failed		1.590002
+Router_TopN_PE6		Failed		1.100001
+Router_TopN_PE7		Failed		0.960002
+Router_TopN_PE9		Failed		1.420002
+Router_TopN_Probe		Failed		0.760001
+Router_Breakdown_bps		Failed		1.130002
+Router_Breakdown_pps		Failed		1.290002
+Router_Matrix_P1		Failed		0.230001
+Router_Matrix_P2		Failed		0.24
+Router_Matrix_PE4		Failed		0.260001
+Router_Matrix_PE5		Failed		0.200001
+Router_Matrix_PE6		Failed		0.23
+Router_Matrix_PE7		Failed		0.31
+Router_Matrix_PE9		Failed		0.24
+Router_Matrix_Probe		Failed		0.250001
+Interface_Detail_P1_IF0/1		Failed		0.820001
+Interface_Detail_P1_IF1/0		Failed		1.190002
+Interface_Detail_P1_IF1/1		Failed		1.090001
+Interface_Detail_P1_IF2/0		Failed		0.980001
+Interface_Detail_P2_IF0/1		Failed		0.730001
+Interface_Detail_P2_IF1/1		Failed		1.280002
+Interface_Detail_P2_IF2/0		Failed		1.050002
+Interface_Detail_PE4_IF0/1		Failed		0.950001
+Interface_Detail_PE4_IF11		Failed		0.892001
+Interface_Detail_PE4_IF12		Failed		1.180001
+Interface_Detail_PE5_IF0/1		Failed		1.142002
+Interface_Detail_PE5_IF101		Failed		1.360002
+Interface_Detail_PE6_IF0/1		Failed		1.030002
+Interface_Detail_PE6_IF1/0		Failed		0.660001
+Interface_Detail_PE6_IF1/1		Failed		0.870001
+Interface_Detail_PE6_IF32		Failed		0.980001
+Interface_Detail_PE7_IF0/1		Failed		1.150002
+Interface_Detail_PE7_IF1/0		Failed		0.820001
+Interface_Detail_PE7_IF1/1		Failed		0.870001
+Interface_Detail_PE9_IF2/0		Failed		0.670001
+Interface_Detail_PE9_IF21		Failed		0.960001
+Interface_Detail_PE9_IF22		Failed		1.310002
+Network Boundary_Detail_- None -		Failed		0.210001
+Neighbor_Detail_NB12,21		Failed		0.950001
+Neighbor_Detail_NB22		Failed		1.260001
+Neighbor_Detail_NB66011		Failed		0.890001
+Sub-Network_Detail_SN101		Pass		0.700001
+Sub-Network_Detail_SN201		Pass		0.820001
+Server-farm_Detail_- None -		Failed		0.23
+Black List_Detail_- None -		Failed		0.280001
+			Current Total Time 226.567118
+
